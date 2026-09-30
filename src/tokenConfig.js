@@ -28,13 +28,13 @@ Update:
 */
 
 const tokenConfig = {
-  name: "Token Name",
-  ticker: "TOKEN",
+  name: "Arthur Monkey",
+  ticker: "ARTHUR",
 
   contractAddress:
-    "0x0000000000000000000000000000000000000000",
+    "6e8LLHkqCTa4mzGuL1PoUxSfeHmDeceJ3DaJSSUNg937",
 
-  chain: "Ethereum",
+  chain: "Solana",
 
   slogan: "The next meme has arrived.",
 
@@ -47,7 +47,7 @@ const tokenConfig = {
   links: {
     buy: "#",
     dexscreener: "#",
-    twitter: "#",
+    twitter: "https://x.com/Commander_Vrax",
     telegram: "#",
     explorer: "#",
   },

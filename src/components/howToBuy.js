@@ -2,12 +2,18 @@ import tokenConfig from "../tokenConfig.js";
 import { createActionLink } from "../utils/actionLink.js";
 import { truncateAddress } from "../utils/links.js";
 
+function walletExamples(chain) {
+  return String(chain).toLowerCase().includes("solana")
+    ? "Phantom or Solflare"
+    : "MetaMask or Rabby";
+}
+
 function steps() {
   return [
     {
       num: "01",
       title: "GET A WALLET",
-      text: `Install a compatible ${tokenConfig.chain} wallet such as MetaMask or Rabby. Write down your seed phrase and keep it offline.`,
+      text: `Install a compatible ${tokenConfig.chain} wallet such as ${walletExamples(tokenConfig.chain)}. Write down your seed phrase and keep it offline.`,
     },
     {
       num: "02",
